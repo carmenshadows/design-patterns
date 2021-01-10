@@ -2,6 +2,7 @@ package factorymethod;
 
 /**
  * "closed for modification but open for extension" principle.
+ * e.g. {@link java.net.URLStreamHandlerFactory#createURLStreamHandler(String)}
  */
 public class FactoryMethodPatternExample {
     public static void main(String[] args) {
@@ -14,7 +15,5 @@ public class FactoryMethodPatternExample {
         AnimalFactory birdFactory = new BirdFactory();
         birdFactory.makeAnimal();
 
-        // e.g
-        // java.net.URLStreamHandlerFactory.createURLStreamHandler()
     }
 }

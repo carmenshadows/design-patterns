@@ -1,5 +1,10 @@
 package simplefactory;
 
+import java.text.NumberFormat;
+
+/**
+ * e.g. {@link NumberFormat#getInstance()}
+ */
 public class SimpleFactoryPatternExample {
 
     public static void main(String[] args) {
@@ -10,7 +15,5 @@ public class SimpleFactoryPatternExample {
         Animal secondAnimal = simpleFactory.createAnimal();
         secondAnimal.speak();
 
-        // e.g
-        // java.text.NumberFormat.getInstance();
     }
 }
