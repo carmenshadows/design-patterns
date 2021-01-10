@@ -1,4 +1,4 @@
-package factorymethodpattern;
+package factorymethod;
 
 public class Bird implements Animal {
     @Override

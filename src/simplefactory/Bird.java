@@ -1,4 +1,4 @@
-package simplefactorypattern;
+package simplefactory;
 
 public class Bird implements Animal{
     @Override

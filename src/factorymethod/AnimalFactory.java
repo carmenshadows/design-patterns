@@ -1,4 +1,4 @@
-package factorymethodpattern;
+package factorymethod;
 
 public abstract class AnimalFactory {
 

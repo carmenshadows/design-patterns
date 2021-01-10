@@ -1,4 +1,4 @@
-package simplefactorypattern;
+package simplefactory;
 
 import java.util.Scanner;
 

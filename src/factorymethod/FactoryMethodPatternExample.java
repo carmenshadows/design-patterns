@@ -1,5 +1,8 @@
-package factorymethodpattern;
+package factorymethod;
 
+/**
+ * "closed for modification but open for extension" principle.
+ */
 public class FactoryMethodPatternExample {
     public static void main(String[] args) {
 

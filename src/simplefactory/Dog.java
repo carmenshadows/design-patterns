@@ -1,8 +1,10 @@
-package factorymethodpattern;
+package simplefactory;
 
 public class Dog implements Animal {
+
     @Override
     public void speak() {
-        System.out.println("dog speaking!");
+        System.out.println("dog is speaking");
     }
+
 }
