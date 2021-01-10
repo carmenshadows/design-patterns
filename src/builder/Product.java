@@ -1,22 +1,29 @@
 package builder;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Product {
 
-    private List<String> parts;
+    private String start;
+    private String bodyType;
+    private int numberOfWheels;
+    private int numberOfHeadLights;
+    private String stop;
 
-    public Product() {
-        this.parts = new ArrayList<>();
+    public Product(String start, String bodyType, int numberOfWheels, int numberOfHeadLights, String stop) {
+        this.start = start;
+        this.bodyType = bodyType;
+        this.numberOfWheels = numberOfWheels;
+        this.numberOfHeadLights = numberOfHeadLights;
+        this.stop = stop;
     }
 
-    public void add(String part) {
-        parts.add(part);
-    }
-
-    public void show() {
-        System.out.println("completed: ");
-        parts.forEach(System.out::println);
+    @Override
+    public String toString() {
+        return "Product{" +
+                "start='" + start + '\'' +
+                ", bodyType='" + bodyType + '\'' +
+                ", numberOfWheels=" + numberOfWheels +
+                ", numberOfHeadLights=" + numberOfHeadLights +
+                ", stop='" + stop + '\'' +
+                '}';
     }
 }

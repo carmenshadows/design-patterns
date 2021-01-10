@@ -1,15 +1,17 @@
 package builder;
 
 public interface Builder {
-    void start();
+    Builder start(String message);
 
-    void buildBody();
+    Builder buildBody(String bodyType);
 
-    void insertWheels();
+    Builder insertWheels(int numberOfWheels);
 
-    void addHeadLights();
+    Builder addHeadLights(int numberOfHeadLights);
 
-    void stop();
+    Builder stop(String message);
+
+    Product build();
 
     Product getVehicle();
 }
