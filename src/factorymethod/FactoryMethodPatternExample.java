@@ -12,8 +12,7 @@ public class FactoryMethodPatternExample {
         dog.speak();
 
         AnimalFactory birdFactory = new BirdFactory();
-        Animal bird = birdFactory.createAnimal();
-        bird.speak();
+        birdFactory.makeAnimal();
 
         // e.g
         // java.net.URLStreamHandlerFactory.createURLStreamHandler()
